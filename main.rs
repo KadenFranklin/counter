@@ -12,7 +12,6 @@ fn main() -> io::Result<()>{
                     let mut wrd = 0;
                     for word in words{
                         wrd = wrd + 1;
-                        int = int + word.len();
                     }
                     for char in variable.clone(){
                         if char.clone() == 'w' {
@@ -27,7 +26,7 @@ fn main() -> io::Result<()>{
                     }
                     for char in variable.clone() {
                         if char.clone() == 'c' {
-                            let character_count = int;
+                            let character_count = file_contents.len();
                             println!("characters:{}", character_count)
                         }
                     }
