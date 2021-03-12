@@ -8,9 +8,8 @@ fn main() -> io::Result<()>{
                 for file in env::args().skip(2) {
                     let file_contents = fs::read_to_string(&file)?;
                     let words = file_contents.split_whitespace();
-                    let mut int = 0;
                     let mut wrd = 0;
-                    for word in words{
+                    for _word in words{
                         wrd = wrd + 1;
                     }
                     for char in variable.clone(){
